@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CallLogReader.iml" filepath="$PROJECT_DIR$/CallLogReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CallLogReader/CallLogReader-CallLogReader.iml" filepath="$PROJECT_DIR$/CallLogReader/CallLogReader-CallLogReader.iml" />
+    </modules>
+  </component>
+</project>
+
