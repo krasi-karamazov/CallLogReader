@@ -17,6 +17,10 @@ public abstract class BaseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(getLayoutId(),container, false);
         initUI(rootView);
+        if(getActivity() instanceof ActionBarActivity) {
+
+            ((ActionBarActivity)getActivity()).getSupportActionBar().setTitle(getTitle());
+        }
         return rootView;
     }
 
@@ -24,7 +28,6 @@ public abstract class BaseFragment extends Fragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         setRetainInstance(true);
-        ((ActionBarActivity)getActivity()).getSupportActionBar().setTitle(getTitle());
     }
 
     protected abstract int getLayoutId();
